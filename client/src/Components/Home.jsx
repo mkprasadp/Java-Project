@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post(`${import.meta.env.BACKEND_URL}/auth/signup`, {
+      const res = await axios.post(`${import.meta.env.BackEnd_URL}/auth/signup`, {
         name: name,
         email: email,
         password: password
