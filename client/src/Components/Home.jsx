@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/auth/signup", {
+      const res = await axios.post(`${process.env.BackEnd_URL}/auth/signup`, {
         name: name,
         email: email,
         password: password
