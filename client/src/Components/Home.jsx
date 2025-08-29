@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post(`${process.env.BackEnd_URL}/auth/signup`, {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/auth/signup`, {
         name: name,
         email: email,
         password: password
@@ -27,7 +27,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-black">
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Sign Up</h2>
         
