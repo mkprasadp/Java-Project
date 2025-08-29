@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/auth/signup", {
+      const res = await axios.post("https://java-project-production.up.railway.app/auth/signup", {
         name: name,
         email: email,
         password: password
