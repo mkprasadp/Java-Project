@@ -12,7 +12,7 @@ import com.example.demo.service.StudentService;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = {"https://java-project-roan.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:5173"})
 public class StudentController {
     
     @Autowired
