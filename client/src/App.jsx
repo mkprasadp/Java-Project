@@ -5,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 const App = () => {
   return (
     <div>
-      <ToastContainer autoClose={1000}/>
+      <ToastContainer autoClose={1500}/>
       <Home/>
     </div>
   )
