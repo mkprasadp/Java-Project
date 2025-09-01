@@ -9,16 +9,16 @@ const Home = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/auth/signup", {
+      const res = await axios.post("http://localhost:8080/auth/signup" || "http://localhost:5000/user/signup", {
         name: name,
         email: email,
         password: password
       });
 
-      if (res.data) {
+      if (res.data.success) {
         toast.success("User Registered Successfully");
       } else {
-        toast.error("Something went wrong");
+        toast.error("Signup fail");
       }
     } catch (error) {
       toast.warning("Something went wrong");
