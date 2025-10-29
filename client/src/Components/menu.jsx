@@ -21,7 +21,7 @@ const menu = () => {
   return (
     <div className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
 
-      <NavLink to='/menu' className='flex items-center gap-2'>
+      <NavLink to='/' className='flex items-center gap-2'>
         <img src={logo} alt="" className="w-10 h-10 rounded"/>
         <h2 className="text-xl font-bold text-red-600">Logo</h2>
       </NavLink>
