@@ -12,7 +12,7 @@ const Home = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/auth/signup" || "http://localhost:5000/user/signup", {
+      const res = await axios.post("https://java-project-dv6z.onrender.com/auth/signup" || "https://java-project-dv6z.onrender.com/user/signup", {
         name: name,email: email,password: password
       });
 
@@ -30,7 +30,7 @@ const Home = () => {
 
   const userLogin = async()=>{
     try {
-      const res = await axios.post("http://localhost:8080/auth/login",{
+      const res = await axios.post("https://java-project-dv6z.onrender.com/auth/login",{
         email:email,password:password
       });
       if(res.data||res.data.success){
